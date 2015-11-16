@@ -1,0 +1,31 @@
+{
+  "name": "react-native-page-swiper",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-native",
+    "swiper",
+    "ios",
+    "android"
+  ],
+  "version": "0.0.1",
+  "description": "Page Swiper component for React Native.",
+  "main": "src/index.js",
+  "scripts": {},
+  "engines": {
+    "node": ">=4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fixt/react-native-page-swiper.git"
+  },
+  "author": "Christopher Garvis <cgarvis@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fixt/react-native-page-swiper/issues"
+  },
+  "homepage": "https://github.com/fixt/react-native-page-swiper#readme",
+  "devDependencies": {
+    "react-native": "0.14.2"
+  }
+}
