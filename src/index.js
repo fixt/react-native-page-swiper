@@ -95,7 +95,7 @@ export default class Swiper extends Component {
 
   render() {
     const scenes = React.Children.map(this.props.children, child => {
-      return React.cloneElement(child, { style: {flex: 1} })
+      return React.cloneElement(child, { style: [child.props.style, {flex: 1}] })
     })
 
     const translateX = this.state.scrollValue.interpolate({
