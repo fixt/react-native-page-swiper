@@ -107,7 +107,7 @@ AppRegistry.registerComponent('swiper', () => swiper)
 
 ### Examples
 
-See code in [examples](https://github.com/leecade/react-native-page-swiper/tree/master/examples/swiper).
+See code in [examples](https://github.com/fixt/react-native-page-swiper/tree/master/examples/swiper).
 
 ## Questions
 
