@@ -31,7 +31,7 @@ export default class Dots extends Component {
           return (
             <Dot
               key={ i }
-              color={ i == active ? this.props.activeColor : this.props.color }
+              color={ i === active ? this.props.activeColor : this.props.color }
             />
           )
         })}

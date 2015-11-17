@@ -5,11 +5,8 @@ import React, {
   Component,
   Dimensions,
   PanResponder,
-  StyleSheet,
   View,
 } from 'react-native'
-
-const { width } = Dimensions.get('window')
 
 import Dots from './dots'
 
@@ -33,7 +30,7 @@ export default class Swiper extends Component {
     this.state = {
       index: props.index,
       scrollValue: new Animated.Value(0),
-      viewWidth: width,
+      viewWidth: Dimensions.get('window').width,
     }
   }
 

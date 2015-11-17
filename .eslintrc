@@ -122,13 +122,13 @@
     "wrap-iife": 0,                  // require immediate function invocation to be wrapped in parentheses (off by default)
     "yoda": 1,                       // require or disallow Yoda conditions
 
-  // Strict Mode
-  // These rules relate to using strict mode.
+    // Strict Mode
+    // These rules relate to using strict mode.
 
     "strict": [2, "global"],         // require or disallow the "use strict" pragma in the global scope (off by default in the node environment)
 
-  // Variables
-  // These rules have to do with variable declarations.
+    // Variables
+    // These rules have to do with variable declarations.
 
     "no-catch-shadow": 1,            // disallow the catch clause parameter name being the same as a variable in the outer scope (off by default in the node environment)
     "no-delete-var": 1,              // disallow deletion of variables
@@ -141,8 +141,8 @@
     "no-unused-vars": [1, {"vars": "all", "args": "none"}], // disallow declaration of variables that are not used in the code
     "no-use-before-define": 0,       // disallow use of variables before they are defined
 
-  // Node.js
-  // These rules are specific to JavaScript running on Node.js.
+    // Node.js
+    // These rules are specific to JavaScript running on Node.js.
 
     "handle-callback-err": 1,        // enforces error handling in callbacks (off by default) (on by default in the node environment)
     "no-mixed-requires": 1,          // disallow mixing regular variable and require declarations (off by default) (on by default in the node environment)
@@ -152,8 +152,8 @@
     "no-restricted-modules": 1,      // restrict usage of specified node modules (off by default)
     "no-sync": 0,                    // disallow use of synchronous methods (off by default)
 
-  // Stylistic Issues
-  // These rules are purely matters of style and are quite subjective.
+    // Stylistic Issues
+    // These rules are purely matters of style and are quite subjective.
 
     "key-spacing": 0,
     "comma-spacing": 0,
@@ -177,7 +177,7 @@
     "no-mixed-spaces-and-tabs": 1,   // disallow mixed spaces and tabs for indentation
     "quotes": [1, "single", "avoid-escape"], // specify whether double or single quotes should be used
     "quote-props": 0,                // require quotes around object literal property names (off by default)
-    "semi": 1,                       // require or disallow use of semicolons instead of ASI
+    "semi": 0,                       // require or disallow use of semicolons instead of ASI
     "sort-vars": 0,                  // sort variables within the same declaration block (off by default)
     "space-after-keywords": 1,       // require a space after certain keywords (off by default)
     "space-in-brackets": 0,          // require or disallow spaces inside brackets (off by default)
@@ -189,8 +189,11 @@
     "one-var": 0,                    // allow just one var statement per function (off by default)
     "wrap-regex": 0,                 // require regex literals to be wrapped in parentheses (off by default)
 
-  // Legacy
-  // The following rules are included for compatibility with JSHint and JSLint. While the names of the rules may not match up with the JSHint/JSLint counterpart, the functionality is the same.
+    // Legacy
+    //
+    // The following rules are included for compatibility with JSHint and JSLint.
+    // While the names of the rules may not match up with the JSHint/JSLint counterpart,
+    // the functionality is the same.
 
     "max-depth": 0,                  // specify the maximum depth that blocks can be nested (off by default)
     "max-len": 0,                    // specify the maximum length of a line in your program (off by default)
@@ -199,9 +202,12 @@
     "no-bitwise": 1,                 // disallow use of bitwise operators (off by default)
     "no-plusplus": 0,                // disallow use of unary operators, ++ and -- (off by default)
 
+    // JSX
+    "jsx-quotes": [2, "prefer-double"],
+
+    // React
     "react/display-name": 0,
     "react/jsx-boolean-value": 0,
-    "react/jsx-quotes": [1, "double", "avoid-escape"],
     "react/jsx-no-undef": 1,
     "react/jsx-sort-props": 0,
     "react/jsx-uses-react": 0,
