@@ -1,10 +1,10 @@
-import React, { Component, StyleSheet, Text, View } from 'react-native'
-import Swiper from 'react-native-swiper'
+import React, { Component, Dimensions, StyleSheet, Text, View } from 'react-native'
+import Swiper from 'react-native-page-swiper'
 
 export default class SwiperExample extends Component {
   render() {
     return (
-      <Swiper style={styles.wrapper} showsButtons={true} loop={true} pagingEnabled={false}>
+      <Swiper style={styles.wrapper}>
         <View style={styles.slide1}>
           <Text style={styles.text}>Hello Swiper</Text>
         </View>
@@ -25,21 +25,18 @@ const styles = StyleSheet.create({
   },
 
   slide1: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#9DD6EB',
   },
 
   slide2: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#97CAE5',
   },
 
   slide3: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#92BBD9',
