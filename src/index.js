@@ -29,7 +29,7 @@ export default class Swiper extends Component {
 
     this.state = {
       index: props.index,
-      scrollValue: new Animated.Value(0),
+      scrollValue: new Animated.Value(props.index),
       viewWidth: Dimensions.get('window').width,
     }
   }
