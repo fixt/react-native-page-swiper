@@ -14,12 +14,14 @@ export default class Swiper extends Component {
   static propTypes = {
     children: React.PropTypes.node.isRequired,
     index: React.PropTypes.number,
+    pager: React.PropTypes.bool,
     onPageChange: React.PropTypes.func,
     activeDotColor: React.PropTypes.string,
   }
 
   static defaultProps = {
     index: 0,
+    pager: true,
     onPageChange: () => {},
     activeDotColor: 'blue',
   }
@@ -117,12 +119,13 @@ export default class Swiper extends Component {
           { scenes }
         </Animated.View>
 
+        {this.props.pager &&
         <Dots
           active={ this.state.index }
           activeColor={ this.props.activeDotColor }
           total={ this.props.children.length }
           style={{ position: 'absolute', bottom: 50, width: this.state.viewWidth }}
-        />
+        />}
       </View>
     )
   }
