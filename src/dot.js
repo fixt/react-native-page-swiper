@@ -10,12 +10,12 @@ export default class Dot extends Component {
     color: React.PropTypes.string,
     diameter: React.PropTypes.number,
     style: View.propTypes.style,
-  }
+  };
 
   static defaultProps = {
     color: 'rgba(192, 192, 192, 1)',
     diameter: 10,
-  }
+  };
 
   render() {
     const { color, diameter } = this.props
