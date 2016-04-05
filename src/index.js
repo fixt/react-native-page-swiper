@@ -14,6 +14,7 @@ export default class Swiper extends Component {
   static propTypes = {
     children: React.PropTypes.node.isRequired,
     index: React.PropTypes.number,
+    threshold: React.PropTypes.number,
     pager: React.PropTypes.bool,
     onPageChange: React.PropTypes.func,
     activeDotColor: React.PropTypes.string,
@@ -22,6 +23,7 @@ export default class Swiper extends Component {
   static defaultProps = {
     index: 0,
     pager: true,
+    threshold: 25,
     onPageChange: () => {},
     activeDotColor: 'blue',
   };
@@ -53,11 +55,19 @@ export default class Swiper extends Component {
     }
 
     this._panResponder = PanResponder.create({
-      // Claim responder if it's a horizontal pan
       onMoveShouldSetPanResponder: (e, gestureState) => {
+        const {threshold} = this.props
+
+        // Claim responder if it's a horizontal pan
         if (Math.abs(gestureState.dx) > Math.abs(gestureState.dy)) {
           return true
         }
+
+        // and only if it exceeds the threshold
+        if (threshold - Math.abs(gestureState.dx) > 0) {
+          return false
+        }
+
       },
 
       // Touch is released, scroll to the one that you're closest to

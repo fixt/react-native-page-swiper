@@ -104,6 +104,7 @@ AppRegistry.registerComponent('swiper', () => swiper)
 | pager | `true` | `boolean` | Show pager. |
 | onPageChange |  | `function` | Callback when page changes. |
 | activeDotColor | `blue` | `string` | CSS color of the dot for the current page. |
+| threshold | `25` | `number` | Threshold before the swiper captures the pan responder |
 
 
 ### Examples
