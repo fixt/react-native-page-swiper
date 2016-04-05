@@ -4,11 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
-- Prop to display/hide pager [56017a771342db604a2288d55390406d923e1cf9]
-- Prop for pan responder threshold [379ae78d314edbc7749dfc1f6e94448ed5239b66]
+- Prop to display/hide pager: [#6]
+- Prop for pan responder threshold: [#14]
 
 ### Fixed
-- Set initial screen to index [196c33fe25a909ca9fb39a2d3b5ed05f5c6bbc0a]
+- Set initial screen to index [#1]
 
 ## [0.0.2] - 2015-11-17
 ### Added
@@ -16,6 +16,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 - Fix child styles not being merged
+
+[#14]: https://github.com/fixt/react-native-page-swiper/pull/14
+[#6]: https://github.com/fixt/react-native-page-swiper/pull/6
+[#1]: https://github.com/fixt/react-native-page-swiper/pull/1
 
 
 [Unreleased]: https://github.com/fixt/react-native-page-swiper/compare/v0.0.2...HEAD
