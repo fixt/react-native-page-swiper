@@ -121,7 +121,7 @@ export default class Swiper extends Component {
     }
 
     return (
-      <View style={{flex: 1, overflow: "hidden"}} onLayout={this.handleLayout.bind(this)}>
+      <View style={{flex: 1, overflow: 'hidden'}} onLayout={this.handleLayout.bind(this)}>
         <Animated.View
           {...this._panResponder.panHandlers}
           style={[sceneContainerStyle, {transform: [{translateX}]}]}
