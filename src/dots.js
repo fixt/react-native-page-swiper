@@ -13,12 +13,12 @@ export default class Dots extends Component {
     total: React.PropTypes.number,
     active: React.PropTypes.number,
     style: View.propTypes.style,
-  }
+  };
 
   static defaultProps = {
     total: 0,
     active: -1,
-  }
+  };
 
   render() {
     const { total, active } = this.props

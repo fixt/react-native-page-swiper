@@ -17,14 +17,14 @@ export default class Swiper extends Component {
     pager: React.PropTypes.bool,
     onPageChange: React.PropTypes.func,
     activeDotColor: React.PropTypes.string,
-  }
+  };
 
   static defaultProps = {
     index: 0,
     pager: true,
     onPageChange: () => {},
     activeDotColor: 'blue',
-  }
+  };
 
   constructor(props) {
     super(props)
