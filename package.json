@@ -10,15 +10,12 @@
   ],
   "version": "0.1.0",
   "description": "Page Swiper component for React Native.",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "engines": {
     "node": ">=4"
   },
   "scripts": {
-    "build": "babel src -d lib -q",
-    "lint": "eslint src",
-    "prebuild": "npm run lint",
-    "prepublish": "npm run build"
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",
@@ -37,6 +34,7 @@
   "devDependencies": {
     "babel-eslint": "^4.1.8",
     "eslint": "^1.10.3",
+    "eslint-config-fixt": "^1.0.1",
     "eslint-plugin-react": "^3.16.1"
   }
 }

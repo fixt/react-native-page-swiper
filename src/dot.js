@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import React, { Component } from 'react';
 import { View } from 'react-native'
@@ -16,11 +16,11 @@ export default class Dot extends Component {
   };
 
   render() {
-    const { color, diameter } = this.props
+    const { color, diameter } = this.props;
 
     return (
       <View
-        style={[{
+        style={ [{
           backgroundColor: color,
           width: diameter,
           height: diameter,
@@ -29,8 +29,8 @@ export default class Dot extends Component {
           marginRight: 3,
           marginTop: 3,
           marginBottom: 3,
-        }, this.props.style]}
+        }, this.props.style] }
       />
-    )
+    );
   }
 }

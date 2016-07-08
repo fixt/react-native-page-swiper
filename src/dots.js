@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import React, { Component } from 'react';
 import {
@@ -6,7 +6,7 @@ import {
   View
 } from 'react-native'
 
-import Dot from './dot'
+import Dot from './dot';
 
 export default class Dots extends Component {
   static propTypes = {
@@ -21,22 +21,22 @@ export default class Dots extends Component {
   };
 
   render() {
-    const { total, active } = this.props
+    const { total, active } = this.props;
 
-    const range = Array.from(new Array(total), (x, i) => i)
+    const range = Array.from(new Array(total), (x, i) => i);
 
     return (
-      <View style={[styles.dots, this.props.style]}>
+      <View style={ [styles.dots, this.props.style] }>
        { range.map(i => {
           return (
             <Dot
-              key={ i }
               color={ i === active ? this.props.activeColor : this.props.color }
+              key={ i }
             />
-          )
-        })}
+          );
+        }) }
       </View>
-    )
+    );
   }
 }
 
@@ -47,4 +47,4 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
   }
-})
+});
