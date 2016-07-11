@@ -1,9 +1,9 @@
 'use strict'
 
-import React, {
-  Component,
+import React, { Component } from 'react';
+import {
   StyleSheet,
-  View,
+  View
 } from 'react-native'
 
 import Dot from './dot'
