@@ -5,13 +5,14 @@ import {
   StyleSheet,
   View
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 import Dot from './dot';
 
 export default class Dots extends Component {
   static propTypes = {
-    total: React.PropTypes.number,
-    active: React.PropTypes.number,
+    total: PropTypes.number,
+    active: PropTypes.number,
     style: View.propTypes.style,
   };
 
