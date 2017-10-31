@@ -3,7 +3,8 @@
 import React, { Component } from 'react';
 import {
   StyleSheet,
-  View
+  View,
+  ViewPropTypes,
 } from 'react-native';
 import PropTypes from 'prop-types';
 
@@ -13,7 +14,7 @@ export default class Dots extends Component {
   static propTypes = {
     total: PropTypes.number,
     active: PropTypes.number,
-    style: View.propTypes.style,
+    style: ViewPropTypes.style,
   };
 
   static defaultProps = {
