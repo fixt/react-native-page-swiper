@@ -86,6 +86,12 @@ export default class Swiper extends Component {
     });
   }
 
+  componentWillReceiveProps(nextProps) {
+      if (nextProps.index !== this.props.index) {
+          this.goToPage(nextProps.index);
+      }
+  }
+
   goToPage(pageNumber) {
     // Don't scroll outside the bounds of the screens
     pageNumber = Math.max(0, Math.min(pageNumber, this.props.children.length - 1));
